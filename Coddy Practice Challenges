@@ -1,0 +1,22 @@
+# The following are examples of Python code I have written while learning with Coddy
+
+# Challenge #1 Bill Split Calculator
+
+# program name
+print("Bill Split Calculator")
+ 
+# input variables
+billAmount = float(input())
+tipPercentage = float(input())
+ 
+# bill total calculations
+tipAmount = (tipPercentage / 100) * billAmount
+totalBill = billAmount + tipAmount
+ 
+print(f"Total (including tip): ${totalBill}")
+ 
+# split bill
+guests = int(input())
+eachPay = totalBill / guests
+ 
+print(f"Each person pays: ${eachPay}")
