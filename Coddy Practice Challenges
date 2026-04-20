@@ -20,3 +20,26 @@ guests = int(input())
 eachPay = totalBill / guests
  
 print(f"Each person pays: ${eachPay}")
+
+
+
+
+# Challenge #2 Factorials
+
+# program name
+print("Calculating Factorials")
+
+# input varaible
+userInput = int(input())
+
+# set index
+result = 1
+
+# calculate factorial
+if userInput <= 1:
+    print(result)
+else:
+    for i in range(1,userInput + 1):
+        result *= i
+    print(result)
+
