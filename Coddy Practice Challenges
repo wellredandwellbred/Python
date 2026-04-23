@@ -1,5 +1,28 @@
 # The following are examples of Python code I have written while learning with Coddy
 
+
+# Write a program that takes two numbers as input, iterates through the range, and finds and prints the following:
+# 1) the first even number greater than 5, and 
+# 2) the first number divisible by 7. 
+
+# define inputs
+var1 = int(input())
+var2 = int(input())
+
+# the first even number greater than 5
+for i in range(var1, var2):
+    if i % 2 == 0 and i > 5:
+        print(f"First even number greater than 5: {i}")
+        break
+
+# the first number divisible by 7
+for i in range(var1, var2):
+    if i % 7 == 0:
+        print(f"First number divisible by 7: {i}")
+        break
+
+# -------------------------------------------------------------------------------------------
+
 # Challenge #1 Bill Split Calculator
 
 # program name
@@ -21,8 +44,7 @@ eachPay = totalBill / guests
  
 print(f"Each person pays: ${eachPay}")
 
-
-
+# -------------------------------------------------------------------------------------------
 
 # Challenge #2 Factorials
 
@@ -43,3 +65,4 @@ else:
         result *= i
     print(result)
 
+# -------------------------------------------------------------------------------------------
