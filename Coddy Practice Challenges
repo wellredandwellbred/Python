@@ -86,6 +86,7 @@ print(f"Each person pays: ${eachPay}")
 # -------------------------------------------------------------------------------------------
 
 # Challenge #2 Factorials
+# Write a program that calculates the factorial of a given integer.
 
 # program name
 print("Calculating Factorials")
