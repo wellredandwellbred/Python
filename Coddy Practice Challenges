@@ -120,6 +120,20 @@ for i in range(1,n+1):
 
 # -------------------------------------------------------------------------------------------
 
+# Challenge #3 Sigma Function
+# Write a function named sigma with one argument that represents a number n.
+# The function will return the sum of all the numbers from 1 to n (including).
 
+def sigma(n):
+    ## starting value
+    summation = 0
+    ## loop - index and bounds
+    for i in range(1,n+1):
+        # summand
+        summation +=  i   
+        i += 1
+    return summation
+
+# -------------------------------------------------------------------------------------------
 
 
