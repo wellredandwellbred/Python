@@ -136,4 +136,38 @@ def sigma(n):
 
 # -------------------------------------------------------------------------------------------
 
+# Game Challenge #4 FizzBuzz with a Twist
+
+# Welcome Message
+print("Welcome to FizzBuzz!")
+
+# Input
+user_input = int(input())
+
+# Create Output Function
+def fizzbuzz(user_input):
+    # divisible by 3 and 7
+    if ((user_input % 3 == 0) and (user_input % 7 == 0)):
+        print("FizzBuzz")
+    # divisible by 3
+    elif (user_input % 3 == 0):
+        print("Fizz")
+    # divisible by 7
+    elif (user_input % 7 == 0):
+        print("Buzz")
+    # the twist: contains the digit 3 but not divisible
+    elif ("3" in str(user_input)):
+        print("Almost Fizz")
+    # else
+    else:
+        print(user_input)
+
+# Loop Over 1 to User Input
+for i in range(1, user_input + 1):
+    fizzbuzz(i)
+
+# -------------------------------------------------------------------------------------------
+
+
+
 
