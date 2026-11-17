@@ -195,7 +195,25 @@ def merge(lst1, lst2):
     return lst1
     print(lst1)
 
+# -------------------------------------------------------------------------------------------
 
+# Challenge #5 Combine and Filter
 
+# Create a function named combine_and_filter that receives 2 arguments:
+# First argument is a list of numbers 
+# Second argument is an integer threshold value
+# The function should: Keep only the numbers greater than the threshold value; Sort the remaining numbers in ascending order; Return the resulting list
 
+def combine_and_filter(lst, threshold):
+    # declare running list
+    runninglst = []
+    # iteration
+    for i in range(len(lst)):
+    # filter acceptable elements
+        if lst[i] > threshold:
+            # keep elements and sort running list
+            runninglst.append(lst[i])
+            runninglst.sort()
+    # return final list
+    return runninglst
 
