@@ -195,6 +195,18 @@ def merge(lst1, lst2):
     return lst1
     print(lst1)
 
+# Write a function to reverse the order of a list
+
+def reverse(lst):
+    # set variables
+    n = len(lst) - 1
+    runninglst = [lst[n]]   
+    # define function
+    for i in range(n):
+        runninglst.append(lst[n-1])
+        n -= 1
+    return runninglst
+
 # -------------------------------------------------------------------------------------------
 
 # Challenge #5 Combine and Filter
